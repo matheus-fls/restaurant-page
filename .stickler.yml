@@ -9,4 +9,4 @@ files:
   ignore:
     - 'dist/*'
     - 'webpack.config.js'
-    
+    - '.eslintrc.js'

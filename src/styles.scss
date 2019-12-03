@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  background-size: 20px 20px;
+  max-width: 1280px;
+  height: 720px;
+  margin: 0 auto;
+}
+/*
+main {
+  max-width: 1280px;
+  height: 720px;
+  margin: 0 auto;
+  background-image: url("https://i.ytimg.com/vi/Cs1VRhpcMOc/maxresdefault.jpg");
+  background-repeat: no-repeat;
+  opacity: 0.7;
+
+  .main-desc {
+    font-size: 66.6px;
+    max-width: 200px;
+    margin-left: 30px;
+    padding-top: 77px;
+    color: #ffffff;
+  }
+}
+*/ 
+
+.bg-container{
+  width: 100%;
+  height: 720px;
+  border: 1px solid #000;
+  position: relative;
+}
+.bg-container .content{
+  position: absolute;
+  z-index:999;
+  text-align: center;
+  width: 100%;
+  color: white;
+  .main-desc {
+    font-size: 66.6px;
+    max-width: 200px;
+    margin-left: 30px;
+    padding-top: 77px;
+    color: #ffffff;
+  }
+}
+.bg-container::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index:99;
+  background-image: url("https://i.ytimg.com/vi/Cs1VRhpcMOc/maxresdefault.jpg");
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.logo {
+  font-family: 'Sedgwick Ave Display', cursive;
+  cursor: pointer;
+  color: rgba(248, 113, 24, 0.8);
+}
+
+.logo:hover {
+  transition: all 0.3s ease 0s;
+  color: rgb(231, 138, 31);
+}
+
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  padding: 30px 10%;
+  background-color: rgb(71, 73, 82);
+  background-color: black !important;
+}
+
+.nav_links {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding: 0 20px;
+
+    a {
+      transition: all 0.3s ease 0s;
+    }
+
+    a:hover {
+      transition: all 0.3s ease 0s;
+      color: rgba(248, 113, 24, 0.8);
+    }
+  }
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(248, 113, 24, 0.8);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgb(231, 138, 31);
+}
