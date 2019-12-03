@@ -8,6 +8,5 @@ linters:
 files:
   ignore:
     - 'dist/*'
-    - 'webpack.config.babel.js'
-    - 'tests/*'
+    - 'webpack.config.js'
     
