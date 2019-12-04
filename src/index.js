@@ -1,21 +1,23 @@
 import './styles.scss';
+import {home} from './js/home.js';
+import {about} from './js/about';
+import {contact} from './js/contact';
+import {menus} from './js/menus';
 
-document.getElementById('content').innerHTML = `
-<header>
-  <a href="http://localhost:8080/"><h1 class="logo">BRUTAL BURGERZ</h1></a>
-  <nav>
-    <ul class="nav_links">
-      <li><a href="#">MENUS</a></li>
-      <li><a href="#">ABOUT</a></li>
-    </ul>
-  </nav>
-  <a href="#"><button>CONTACT</button></a>
-</header>
-<main>
-  <div class="bg-container">
-    <div class="content">
-      <h1 class="main-desc">Monster burgers for your daily brutal needs!</h1>
-    </div>
-  </div>
-</main>
-`
+document.querySelector('#contact').addEventListener('click', () => {
+  document.querySelector('main').innerHTML = contact;
+});
+
+document.querySelector('#menus').addEventListener('click', () => {
+  document.querySelector('main').innerHTML = menus;
+});
+
+document.querySelector('#about').addEventListener('click', () => {
+  document.querySelector('main').innerHTML = about;
+});
+
+document.querySelector('#home').addEventListener('click', () => {
+  document.querySelector('main').innerHTML = home;
+});
+
+document.querySelector('#home').click();

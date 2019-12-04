@@ -7,6 +7,8 @@
   padding: 0;
 }
 
+// General looks, navbar & Homepage Styles
+
 body {
   background-color: black;
   background-size: 20px 20px;
@@ -14,24 +16,10 @@ body {
   height: 720px;
   margin: 0 auto;
 }
-/*
-main {
-  max-width: 1280px;
-  height: 720px;
-  margin: 0 auto;
-  background-image: url("https://i.ytimg.com/vi/Cs1VRhpcMOc/maxresdefault.jpg");
-  background-repeat: no-repeat;
-  opacity: 0.7;
 
-  .main-desc {
-    font-size: 66.6px;
-    max-width: 200px;
-    margin-left: 30px;
-    padding-top: 77px;
-    color: #ffffff;
-  }
-}
-*/ 
+h2{color: aliceblue;}
+
+
 
 .bg-container{
   width: 100%;
@@ -103,18 +91,19 @@ header {
     display: inline-block;
     padding: 0 20px;
 
-    a {
+    button {
       transition: all 0.3s ease 0s;
     }
 
-    a:hover {
+    button:hover {
       transition: all 0.3s ease 0s;
       color: rgba(248, 113, 24, 0.8);
+      cursor: pointer;
     }
   }
 }
 
-button {
+#contact{
   padding: 9px 25px;
   background-color: rgba(248, 113, 24, 0.8);
   border: none;
@@ -123,6 +112,82 @@ button {
   transition: all 0.3s ease 0s;
 }
 
-button:hover {
+#contact:hover {
   background-color: rgb(231, 138, 31);
+}
+
+button {
+  font-size: 100%;
+  background-color: black;
+  border: none;
+}
+
+// Styles for contact form:
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contact-container {
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: rgb(71, 73, 82);
+  padding: 20px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+// Styles for About:
+
+article {
+  color: aliceblue;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+  background-color: rgb(71, 73, 82);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+// Styles for Menus:
+
+.food-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 40px auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  h2, h3 {margin: 10px 11px;}
+  h3 {color: rgba(248, 113, 24, 0.8);}
+  p {
+    margin: 0 11px;
+    margin-top: -9px;
+    color: #777;}
+  .food {
+    display: flex;
+    justify-content: space-between;
+  }
 }
