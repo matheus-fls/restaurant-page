@@ -1,23 +1,28 @@
 import './styles.scss';
-import {home} from './js/home.js';
-import {about} from './js/about';
-import {contact} from './js/contact';
-import {menus} from './js/menus';
+import layout from './js/layout';
+import home from './js/home';
+import about from './js/about';
+import contact from './js/contact';
+import menus from './js/menus';
+
+document.getElementById('content').innerHTML = layout();
+
+const mainContent = (tab) => document.querySelector('main').innerHTML = tab;
 
 document.querySelector('#contact').addEventListener('click', () => {
-  document.querySelector('main').innerHTML = contact;
+  mainContent(contact());
 });
 
 document.querySelector('#menus').addEventListener('click', () => {
-  document.querySelector('main').innerHTML = menus;
+  mainContent(menus());
 });
 
 document.querySelector('#about').addEventListener('click', () => {
-  document.querySelector('main').innerHTML = about;
+  mainContent(about());
 });
 
 document.querySelector('#home').addEventListener('click', () => {
-  document.querySelector('main').innerHTML = home;
+  mainContent(home());
 });
 
 document.querySelector('#home').click();
