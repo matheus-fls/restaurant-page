@@ -77,6 +77,12 @@ header {
   background-color: black;
 }
 
+button {
+  font-size: 100%;
+  background-color: black;
+  border: none;
+}
+
 .nav_links {
   list-style: none;
   li {
@@ -103,12 +109,6 @@ header {
   &:hover {
     background-color: rgb(231, 138, 31);
   }
-}
-
-button {
-  font-size: 100%;
-  background-color: black;
-  border: none;
 }
 
 // Styles for contact form:

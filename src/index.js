@@ -7,7 +7,7 @@ import menus from './js/menus';
 
 document.getElementById('content').innerHTML = layout();
 
-const mainContent = (tab) => document.querySelector('main').innerHTML = tab;
+const mainContent = (tab) => { document.querySelector('main').innerHTML = tab };
 
 document.querySelector('#contact').addEventListener('click', () => {
   mainContent(contact());
