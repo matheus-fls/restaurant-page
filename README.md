@@ -1,6 +1,6 @@
 # Restaurant Page
 
-> This is a basic restaurant page built with JavaScript, made as part of the main Technical Curriculum from [Microverse](https://www.microverse.org/). You can check the guidelines [here](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page). 
+> This is a basic restaurant page built with JavaScript, HTML and CSS. Made as part of the main Technical Curriculum from [Microverse](https://www.microverse.org/). You can check the project guidelines [here](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page). 
 
 ![screenshot](./img/screenshot.jpg)
 
